@@ -1,0 +1,227 @@
+/* Reseteo básico */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Estilo del body */
+body {
+  background-color: #f3f5fc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Estilo del header */
+header {
+  width: 100%;
+  height: 70px;
+}
+
+.logo {
+  width: 120px;
+  height: 48px;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+h1 {
+  text-align: center;
+  padding-bottom: 1rem;
+  color: #0a3871;
+}
+/* Define la animación */
+@keyframes moveRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
+
+/* Aplica la animación al h1 */
+.animated-title {
+  display: inline-block;
+  animation: moveRight 3s ease-in-out infinite alternate;
+}
+
+/* Estilo del main */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Estilo de la sección del formulario */
+.form-section {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-auto-columns: 1rem;
+}
+
+.contenedor-caja-texto {
+  margin-bottom: 20px;
+}
+
+.caja-texto {
+  width: 100%;
+  height: 25rem;
+  border: none;
+  color: #0a3871;
+  font-size: 16px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.2);
+}
+
+.caja-texto::placeholder {
+  color: #0a3871;
+}
+
+.alerta {
+  display: flex;
+  align-items: center;
+  color: #495057;
+  margin-bottom: 20px;
+}
+
+.alerta img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.contenedor-botones {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenedor-botones input {
+  width: 48%;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-encriptar {
+  background-color: #0a3871;
+  color: white;
+  border: none;
+}
+
+.btn-desencriptar {
+  background-color: #d8dfe8;
+  color: #0a3871;
+  border: 1px solid #0a3871;
+}
+
+/* Estilo de la sección 2 */
+.seccion-2 {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.3);
+  justify-content: space-between;
+}
+
+.contenedor-munieco img {
+  width: 80%;
+  max-width: 250px;
+  margin-bottom: 20px;
+}
+
+.contenedor-parrafo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contenedor-titulo {
+  font-size: 18px;
+  font-weight: 700;
+  color: #343a40;
+}
+
+.contendet-Texto {
+  color: #495057;
+  font-size: 16px;
+}
+
+.contenedor-copiar {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.btn-copiar {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #0a3871;
+  font-size: 16px;
+  border: 1px solid #0a3871;
+  cursor: pointer;
+}
+
+.contenedor-resultado {
+  width: 100%;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.texto-resultado {
+  color: #495057;
+  font-size: 16px;
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .form-section,
+  .seccion-2 {
+    width: 100%;
+  }
+
+  .contenedor-botones {
+    flex-direction: column;
+  }
+
+  .contenedor-botones input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.ocultar {
+  display: none;
+}
+
+figcaption {
+  text-align: center;
+}
+
+footer {
+  color: #737373;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 3rem;
+  font-size: 14px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador Challenge</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <main class="container">
+    <form class="form-section">
+      <h1 class="animated-title">Encriptador de Texto</h1>
+      <div class="contenedor-caja-texto">
+        <textarea class="caja-texto" name="mensaje" placeholder="Ingrese el texto aquí"></textarea>
+      </div>
+      <div class="alerta">
+        <img src="img/alerta.svg" alt="Alerta">
+        <span> Solo letras minúsculas y sin acentos</span>
+      </div>
+      <div class="contenedor-botones">
+        <input type="button" class="btn-encriptar" value="Encriptar">
+        <input type="button" class="btn-desencriptar" value="Desencriptar">
+      </div>
+    </form>
+    <aside class="seccion-2">
+      <div class="contenedor-munieco">
+        <img src="img/Muneco.png" alt="Muñeco">
+      </div>
+      <div class="contenedor-parrafo">
+        <h3 class="contenedor-titulo">Ningún mensaje fue <br> encontrado </h3>
+        <p class="contendet-Texto">Ingresa el texto que desees encriptar o desencriptar</p>
+      </div>
+      <div class="contenedor-resultado">
+        <p class="texto-resultado"></p>
+      </div>
+      <div class="contenedor-copiar">
+        <input type="button" value="Copiar" class="btn-copiar">
+      </div>
+
+    </aside>
+  </main>
+  <footer>
+    <p>Creado por GitHalex</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>
